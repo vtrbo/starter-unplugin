@@ -1,0 +1,92 @@
+{
+  "name": "---name---",
+  "version": "0.0.0",
+  "packageManager": "pnpm@7.8.0",
+  "description": "Victor Bo's Unplugin Template.",
+  "license": "MIT",
+  "homepage": "https://github.com/vtrbo/---name---#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vtrbo/---name---.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vtrbo/---name---/issues"
+  },
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    },
+    "./vite": {
+      "require": "./dist/vite.js",
+      "import": "./dist/vite.mjs"
+    },
+    "./webpack": {
+      "require": "./dist/webpack.js",
+      "import": "./dist/webpack.mjs"
+    },
+    "./rollup": {
+      "require": "./dist/rollup.js",
+      "import": "./dist/rollup.mjs"
+    },
+    "./esbuild": {
+      "require": "./dist/esbuild.js",
+      "import": "./dist/esbuild.mjs"
+    },
+    "./nuxt": {
+      "require": "./dist/nuxt.js",
+      "import": "./dist/nuxt.mjs"
+    },
+    "./types": {
+      "require": "./dist/types.js",
+      "import": "./dist/types.mjs"
+    },
+    "./*": "./*"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./*"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch src",
+    "build:fix": "esno scripts/postbuild.ts",
+    "lint": "eslint .",
+    "play": "nr -C playground dev",
+    "prepublishOnly": "nr build",
+    "release": "bumpp && npm publish",
+    "start": "esno src/index.ts",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@types/node": "^18.6.3",
+    "@vtrbo/eslint-config": "^0.0.6",
+    "@vtrbo/ni": "^0.0.3",
+    "@vtrbo/utils": "0.0.0-alpha.2",
+    "bumpp": "^8.2.1",
+    "chalk": "^5.0.1",
+    "eslint": "^8.21.0",
+    "esno": "^0.16.3",
+    "fast-glob": "^3.2.11",
+    "nodemon": "^2.0.19",
+    "pnpm": "^7.8.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.77.2",
+    "tsup": "^6.2.1",
+    "typescript": "^4.7.4",
+    "unplugin": "^0.8.0",
+    "vite": "^3.0.4",
+    "vitest": "^0.20.2",
+    "webpack": "^5.74.0"
+  }
+}
