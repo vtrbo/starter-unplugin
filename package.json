@@ -83,27 +83,27 @@
     "test": "vitest"
   },
   "dependencies": {
-    "unplugin": "^1.0.1"
+    "unplugin": "^1.1.0"
   },
   "devDependencies": {
-    "@types/node": "^18.7.6",
-    "@vtrbo/eslint-config": "^0.0.7",
-    "@vtrbo/ni": "^0.0.3",
-    "@vtrbo/utils": "0.0.15",
+    "@types/node": "^18.14.0",
+    "@vtrbo/eslint-config": "^0.2.2",
+    "@vtrbo/ni": "^0.1.0",
+    "@vtrbo/utils": "0.2.2",
     "bumpp": "^8.2.1",
-    "chalk": "^5.0.1",
-    "eslint": "^8.22.0",
+    "chalk": "^5.2.0",
+    "eslint": "^8.34.0",
     "esno": "^0.16.3",
-    "fast-glob": "^3.2.11",
-    "nodemon": "^2.0.19",
-    "pnpm": "^7.9.3",
-    "rimraf": "^3.0.2",
-    "rollup": "^2.78.1",
-    "tsup": "^6.2.2",
-    "typescript": "^4.7.4",
-    "unplugin": "^0.9.3",
-    "vite": "^3.0.9",
-    "vitest": "^0.22.1",
-    "webpack": "^5.74.0"
+    "fast-glob": "^3.2.12",
+    "nodemon": "^2.0.20",
+    "pnpm": "^7.27.1",
+    "rimraf": "^4.1.2",
+    "rollup": "^3.17.2",
+    "tsup": "^6.6.3",
+    "typescript": "^4.9.5",
+    "unplugin": "^1.1.0",
+    "vite": "^4.1.4",
+    "vitest": "^0.28.5",
+    "webpack": "^5.75.0"
   }
 }
