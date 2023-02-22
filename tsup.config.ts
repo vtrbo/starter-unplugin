@@ -1,11 +1,11 @@
-import { defineConfig } from 'tsup'
+import type { Options } from 'tsup'
 
-export default defineConfig({
-  entry: [
+export default <Options>{
+  entryPoints: [
     'src/*.ts',
   ],
-  format: ['cjs', 'esm'],
-  splitting: true,
   clean: true,
+  format: ['cjs', 'esm'],
   dts: true,
-})
+  onSuccess: 'npm run build:fix',
+}
