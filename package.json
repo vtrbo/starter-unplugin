@@ -1,16 +1,16 @@
 {
-  "name": "---name---",
+  "name": "---plugin-name---",
   "version": "0.0.0",
   "packageManager": "pnpm@7.9.3",
   "description": "Victor Bo's Unplugin Template.",
   "license": "MIT",
-  "homepage": "https://github.com/vtrbo/---name---#readme",
+  "homepage": "https://github.com/vtrbo/---plugin-name---#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vtrbo/---name---.git"
+    "url": "git+https://github.com/vtrbo/---plugin-name---.git"
   },
   "bugs": {
-    "url": "https://github.com/vtrbo/---name---/issues"
+    "url": "https://github.com/vtrbo/---plugin-name---/issues"
   },
   "keywords": [
     "unplugin",
